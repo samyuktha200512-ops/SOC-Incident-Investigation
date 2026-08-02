@@ -1,5 +1,13 @@
 # 🛡️ SOC Incident Investigation using Linux Logs and Splunk
 
+![Documentation](https://img.shields.io/badge/Documentation-Markdown-blue)
+![Splunk](https://img.shields.io/badge/Splunk-Enterprise-green)
+![SOC](https://img.shields.io/badge/SOC-Incident%20Response-red)
+![SIEM](https://img.shields.io/badge/SIEM-Analysis-orange)
+![Linux](https://img.shields.io/badge/Linux-Logs-blueviolet)
+
+---
+
 ## 📌 Project Overview
 
 This project demonstrates a Security Operations Center (SOC) investigation by analyzing Linux authentication and system logs to identify suspicious activities, classify security incidents, develop detection logic, and recommend appropriate response actions.
@@ -42,30 +50,28 @@ The investigation was validated using Splunk Enterprise, where the provided logs
 
 ---
 
-## 🔍 Investigation Workflow
-
-The investigation followed a standard Security Operations Center (SOC) incident response process:
+## 🔄 Investigation Workflow
 
 ```text
-Linux Logs
-     │
-     ▼
-Log Analysis
-     │
-     ▼
-Threat Detection
-     │
-     ▼
-Incident Classification
-     │
-     ▼
-Response Recommendation
-     │
-     ▼
-Splunk Validation
-     │
-     ▼
-Final Incident Response Report
+              📥 Log Collection
+                     │
+                     ▼
+          📊 Splunk Log Analysis
+                     │
+                     ▼
+      🚨 Suspicious Event Detection
+                     │
+                     ▼
+      🔍 IOC & Timeline Correlation
+                     │
+                     ▼
+      ⚠️ Incident Verification
+                     │
+                     ▼
+       🛠️ Containment & Response
+                     │
+                     ▼
+         📝 Incident Report
 ```
 
 This workflow demonstrates how security analysts transform raw log events into actionable security findings and documented incident reports.
@@ -147,18 +153,14 @@ Splunk/SPL_Queries.md
 
 ---
 
-## 📖 Learning Outcomes
+## 📚 Learning Outcomes
 
-Through this project, I gained practical experience in:
-
-- Investigating Linux authentication logs
-- Distinguishing normal and suspicious system activities
-- Writing detection logic for SOC monitoring
-- Classifying security incidents by severity
-- Developing response recommendations
-- Using Splunk Enterprise to validate security findings
-- Creating professional incident response documentation
-
+- Investigated Linux authentication events using Splunk Enterprise.
+- Detected brute-force and username enumeration attempts.
+- Correlated multiple log sources to identify suspicious activity.
+- Investigated privilege escalation indicators.
+- Documented findings using a structured SOC incident report.
+- Practiced incident response methodology and log analysis.
 ---
 
 ## 🚀 Future Improvements
